@@ -1,0 +1,52 @@
+:root {
+  --size: 25vw;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+}
+
+.keypad {
+  width: var(--size);
+  margin: auto;
+}
+
+.keypad > .row {
+  display: flex;
+}
+
+.keypad .button:hover {
+  cursor: pointer;
+  background-color: #484848;
+}
+
+.keypad .button {
+  height: calc(var(--size) / 4);
+  display: flex;
+  margin: 5px;
+  flex: 1;
+  background-color: #212121;
+  flex-flow: row wrap;
+  color: #fafafa;
+}
+
+.keypad .button > .main {
+  flex: 1 100%;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+}
+
+.keypad .button > .letters {
+  display: flex;
+  flex: 1 100%;
+  justify-content: space-evenly;
+}
